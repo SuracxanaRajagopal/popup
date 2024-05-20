@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.context-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+}
+
+.context-menu.show {
+  display: block;
+}
+
+.context-menu ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.context-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.context-menu li:hover {
+  background-color: lightgray;
+}
